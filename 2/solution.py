@@ -1,8 +1,7 @@
 from math import sqrt
 
 def fibo(n):
-	return int((1/sqrt(5))*pow(((1+sqrt(5))/2), n))
-
+	return int(round((1/sqrt(5))*pow(((1+sqrt(5))/2), n)))
 
 f = 0
 x = 1
@@ -17,8 +16,6 @@ while not finished:
 			summa += f
 		else:
 			finished = True
-	else:
-		print "> ", f
 
 print summa
 
